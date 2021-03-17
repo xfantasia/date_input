@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery UI Datepicker date format dd-mm-yy</title>
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+    
+  <style>
+    * { font: 17px Calibri; }
+    input {
+      padding: 7px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+    <h3>Set focus on the box to select a date. (shows dd-mm-yy format)</h3>
+    <div>
+        Date: <input type='text' id='tbDate' placeholder='select a date' />
+    </div>
+</body>
+            
+<script>
+    $(document).ready(function () {
+        $('input[id$=tbDate]').datepicker({
+            dateFormat: 'dd-mm-yy'			// Date Format "dd-mm-yy"
+        });
+    });
+</script>
+</html>
